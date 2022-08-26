@@ -1,4 +1,5 @@
-
+import React from "react"
+import Character from "./Character";
 
 function CharacterList() {
   return (
