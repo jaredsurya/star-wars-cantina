@@ -1,0 +1,84 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Tusken Raider",
+      "level": 4,
+      "affiliation": "neutral",
+      "description": "Tusken Raiders, or Sand People as they are sometimes known, wear abundant clothing to protect themselves from Tatooine’s twin suns. The strong beings pursue a nomadic existence in some of Tatooine’s most desolate regions. They fear little, and make sudden raids on local settlers.",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/tusken-raiders-main-bobf-2_135f8e1e.jpeg?region=0%2C0%2C1280%2C720&width=768"
+    },
+    {
+      "id": 2,
+      "name": "Obi Wan Kenobi",
+      "level": 10,
+      "affiliation": "Rebel Alliance",
+      "description": "A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in the ways of the Force. He trained Anakin Skywalker, served as a general in the Republic Army during the Clone Wars, and guided Luke Skywalker as a mentor.",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/obi-wan-kenobi-main_3286c63c.jpeg?region=0%2C0%2C1280%2C721&width=768"
+    },
+    {
+      "id": 3,
+      "name": "Darth Vader",
+      "level": 10,
+      "affiliation": "Galactic Empire",
+      "description": "Once the heroic Jedi Knight named Anakin Skywalker, Darth Vader was seduced by the dark side of the Force. Forever scarred by his defeat on Mustafar, Vader was transformed into a cybernetically-enhanced Sith Lord. At the dawn of the Empire, Vader led the Empire’s eradication of the Jedi Order and the search for survivors. He remained in service of the Emperor -- the evil Darth Sidious -- for decades, enforcing his Master’s will and seeking to crush the Rebel Alliance and other detractors. But there was still good in him…",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/darth-vader-main_4560aff7.jpeg?region=0%2C67%2C1280%2C720&width=768"
+    },
+    {
+      "id": 4,
+      "name": "R2-D2",
+      "level": 3,
+      "affiliation": "Rebel Alliance",
+      "description": "A reliable and versatile astromech droid, R2-D2 has served Padmé Amidala, Anakin Skywalker, and Luke Skywalker in turn, showing great bravery in rescuing his masters and their friends from many perils. A skilled starship mechanic and fighter pilot's assistant, he has an unlikely but enduring friendship with the fussy protocol droid C-3PO.",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/r2-d2-main_f315b094.jpeg?region=273%2C0%2C951%2C536&width=768"
+    },
+    {
+      "id": 5,
+      "name": "Princess Leia",
+      "level": 7,
+      "affiliation": "Rebel Alliance",
+      "description": "Princess Leia Organa was one of the greatest leaders of the Rebel Alliance, fearless on the battlefield and dedicated to ending the Empire’s tyranny. Daughter of Padmé Amidala and Anakin Skywalker, sister of Luke Skywalker, and with a soft spot for scoundrels, Leia ranked among the galaxy’s great heroes. But life under the New Republic proved difficult for her. Sidelined by a new generation of political leaders, she struck out on her own to oppose the First Order as founder of the Resistance. These setbacks in her political career were accompanied by more personal losses, which she endured with her seemingly inexhaustible will.",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/leia-organa-main_1761a3ea.jpeg?region=303%2C11%2C974%2C547&width=768"
+    },
+    {
+      "id": 6,
+      "name": "Storm Trooper",
+      "level": 7,
+      "affiliation": "Galactic Empire",
+      "description": "Stormtroopers are elite shock troops fanatically loyal to the Empire and impossible to sway from the Imperial cause. They wear imposing white armor, which offers a wide range of survival equipment and temperature controls to allow the soldiers to survive in almost any environment. Stormtroopers wield blaster rifles and pistols with great skill, and attack in hordes to overwhelm their enemies. Along with standard stormtroopers, the Empire has organized several specialized units, including snowtroopers and scout troopers.",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/stormtrooper-main_011e064e.jpeg?region=0%2C85%2C1619%2C911&width=768"
+    },
+    {
+      "id": 7,
+      "name": "Jawa",
+      "level": 3,
+      "affiliation": "neutral",
+      "description": "Jawas are meter-tall humanoids completely hidden behind rough, hand-woven robes. Their faces are concealed within the dark folds of a cowl, from which peer their sickly glowing yellow eyes. They comb the deserts of Tatooine in search of discarded scrap and wayward mechanicals. Using their cobbled-together weaponry, they can incapacitate droids and drag them to their treaded fortress-homes, immense sand-scarred vehicles known as sandcrawlers. They sell their hastily refurbished junk to moisture farmers who are hard-pressed to find a better selection elsewhere.",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/jawas-main_a668013b.jpeg?region=0%2C0%2C1280%2C721&width=768"
+    },
+    {
+      "id": 8,
+      "name": "C-3PO",
+      "level": 3,
+      "affiliation": "Rebel Alliance",
+      "description": "C-3PO longs for more peaceful times, but his continued service to the Resistance — and his knowledge of more than seven million forms of communication — keeps the worry-prone droid in the frontlines of galactic conflict. Programmed for etiquette and protocol, Threepio was built by a young Anakin Skywalker, and has been a constant companion to astromech R2-D2. Over the years, he was involved in some of the galaxy’s most defining moments and thrilling battles. Since the Empire’s defeat, C-3PO has served Leia Organa, head of a Resistance spy ring aimed at undermining the First Order.",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/c-3po-main_417a2902.jpeg?region=176%2C0%2C951%2C536&width=768"
+    },
+    {
+      "id": 9,
+      "name": "The Mandalorian",
+      "level": 9,
+      "affiliation": "neutral",
+      "description": "The Mandalorian, known to a few as Din Djarin, is a battle-worn bounty hunter, making his way through a dangerous galaxy in an uncertain age.",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/the-mandalorian-main_b842cedf.jpeg?region=0%2C0%2C1280%2C720&width=768"
+    },
+    {
+      "id": 10,
+      "name": "Darth Sidious",
+      "level": 4,
+      "affiliation": "Galactic Empire",
+      "description": "The dark side of the Force is a pathway to many abilities some consider to be unnatural, and Sheev Palpatine is the most infamous follower of its doctrines. Scheming, powerful, and evil to the core, Darth Sidious restored the Sith and destroyed the Jedi Order. Living a double life, he was also Palpatine, a Naboo Senator and phantom menace. He manipulated the political system of the Galactic Republic until he was named Supreme Chancellor -- and eventually Emperor – and ruled the galaxy through fear and tyranny. The galaxy rejoiced when he died at the Battle of Endor, but Sidious had cheated death and patiently plotted a return to power.",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/emperor-palpatine-darth-sidious-main_3d82ddaa.jpeg?region=164%2C0%2C953%2C536&width=768"
+    }
+  ]
+}
