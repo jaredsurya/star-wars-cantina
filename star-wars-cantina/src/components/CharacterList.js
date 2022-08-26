@@ -1,10 +1,11 @@
 import React from "react"
 import Character from "./Character";
 
-function CharacterList() {
+function CharacterList({characters}) {
+  const charList = characters.map((character) => <Character character={character} />)
   return (
     <div className="App">
-      <Character />
+      {charList}
     </div>
   );
 }

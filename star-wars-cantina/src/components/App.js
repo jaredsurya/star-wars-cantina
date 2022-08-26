@@ -6,11 +6,18 @@ import Header from "./Header"
 import NewCharacterForm from "./NewCharacterForm"
 
 function App() {
+  const {characters, setCharacters} = useState([])
+  useEffect(() => {
+    fetch("http://localhost:3001/characters")
+    .then(res => res.json())
+    .then(data => setCharacters(data))
+  })
+  console.log(characters)
   return (
     <div className="App">
       <Header />
       <NewCharacterForm />
-      <CharacterList />
+      <CharacterList characters={characters}/>
       <Footer />
     </div>
   );
