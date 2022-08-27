@@ -1,18 +1,13 @@
 import React, { useState } from "react";
 
-function AddNew({ handleSubmit, setNewCharacter, newCharacter }) {
-  // const [name, setName] = useState("");
-  // const [affiliation, setAffilitaion] = useState("");
-  // const [power, setPower] = useState("");
-  // const [img, setImg] = useState("");
-  // const [description, setDescription] = useState("");
-  const [newChar, setNewChar] = useState({
-    name: "",
-    level: "",
-    affiliation: "",
-    description: "",
-    img: "",
-  });
+function AddNew({ handleSubmit, setNewChar, newChar }) {
+  // const [newChar, setNewChar] = useState({
+  //   name: "",
+  //   level: "",
+  //   affiliation: "",
+  //   description: "",
+  //   img: "",
+  // });
 
   function handleChange(e){
     setNewChar({

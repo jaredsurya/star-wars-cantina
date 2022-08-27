@@ -7,14 +7,7 @@ import AddNew from "./AddNew"
 
 function App() {
   const [characters, setCharacters] = useState([])
-  const blankStateObj = {
-    name: "",
-    level: "",
-    affiliation: "",
-    description: "",
-    img: ""
-  }
-  const [newCharacter, setNewCharacter] = useState(blankStateObj)
+  const [newChar, setNewChar] = useState({})
 
   useEffect(() => {
     fetch("http://localhost:9000/characters")
@@ -23,14 +16,13 @@ function App() {
   }, [])
   //console.log(characters)
 
-  function handleSubmit(e){
-    e.preventDefault()
+  function handleSubmit(newChar){
       fetch("http://localhost:9000/characters", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(newCharacter),
+        body: JSON.stringify(newChar),
       })
       .then(r => r.json())
       .then(/* onAddCharacter */)
@@ -39,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <AddNew handleSubmit={handleSubmit} newCharacter={newCharacter} setNewCharacter={setNewCharacter}/>
+      <AddNew handleSubmit={handleSubmit} newChar={newChar} setNewChar={setNewChar}/>
       <CharacterList characters={characters}/>
       <Footer />
     </div>

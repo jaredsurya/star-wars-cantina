@@ -79,6 +79,14 @@
       "affiliation": "Galactic Empire",
       "description": "The dark side of the Force is a pathway to many abilities some consider to be unnatural, and Sheev Palpatine is the most infamous follower of its doctrines. Scheming, powerful, and evil to the core, Darth Sidious restored the Sith and destroyed the Jedi Order. Living a double life, he was also Palpatine, a Naboo Senator and phantom menace. He manipulated the political system of the Galactic Republic until he was named Supreme Chancellor -- and eventually Emperor – and ruled the galaxy through fear and tyranny. The galaxy rejoiced when he died at the Battle of Endor, but Sidious had cheated death and patiently plotted a return to power.",
       "img": "https://lumiere-a.akamaihd.net/v1/images/emperor-palpatine-darth-sidious-main_3d82ddaa.jpeg?region=164%2C0%2C953%2C536&width=768"
+    },
+    {
+      "name": "asdf",
+      "affiliation": "neutral",
+      "level": "10",
+      "img": "asdfasdf",
+      "description": "asdfaasdf",
+      "id": 11
     }
   ]
 }
