@@ -2,7 +2,7 @@ import React from "react";
 
 function Character({ character, onDelete }) {
   const { name, img, affiliation, level, description, id } = character;
-  console.log(character)
+  //console.log(character)
   function handleDeleteClick() {
     fetch(`http://localhost:9000/characters/${id}`, {
       method: "DELETE",

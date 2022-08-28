@@ -3,7 +3,9 @@ import React from "react"
 
 function Footer() {
   return(
-    null
+    <div>
+      <p>This single page app was brought to you by Flatiron School, STARWARS.COM, and Jared Dietz.</p>
+    </div>
   )
 }
 

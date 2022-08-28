@@ -1,20 +1,13 @@
 import React, { useState } from "react";
 
 function AddNew({ handleSubmit, setNewChar, newChar }) {
-  // const [newChar, setNewChar] = useState({
-  //   name: "",
-  //   level: "",
-  //   affiliation: "",
-  //   description: "",
-  //   img: "",
-  // });
 
   function handleChange(e){
     setNewChar({
       ...newChar,
       [e.target.name]: e.target.value,
     })
-    console.log(newChar)
+    //console.log(newChar)
   }
 
   return (
@@ -23,7 +16,8 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
         className="add-character"
         onSubmit={(e) => {
           e.preventDefault();
-          handleSubmit(newChar);
+          handleSubmit(newChar)
+          setNewChar({});
         }}
       >
         <h3>Feeling Creative?</h3>
