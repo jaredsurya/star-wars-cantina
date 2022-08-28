@@ -1,6 +1,6 @@
 import React from "react";
 
-function Character({ character }) {
+function Character({ character, onDelete }) {
   const { name, img, affiliation, level, description, id } = character;
   console.log(character)
   function handleDeleteClick() {
@@ -9,7 +9,7 @@ function Character({ character }) {
     })
       .then((r) => r.json())
       .then(() => {
-        onDeleteCharacter(character);
+        onDelete(character);
       });
   }
 

@@ -28,11 +28,16 @@ function App() {
       .then(/* onAddCharacter */)
   }
 
+  function onDelete(charToDelete) {
+    const updatedCharList = characters.filter((character) => character.id !== charToDelete.id)
+    setCharacters(updatedCharList)
+  }
+
   return (
     <div className="App">
       <Header />
       <AddNew handleSubmit={handleSubmit} newChar={newChar} setNewChar={setNewChar}/>
-      <CharacterList characters={characters}/>
+      <CharacterList characters={characters} onDelete={onDelete} />
       <Footer />
     </div>
   );

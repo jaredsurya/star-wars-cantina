@@ -1,9 +1,9 @@
 import React from "react";
 import Character from "./Character";
 
-function CharacterList({ characters }) {
+function CharacterList({ characters, onDelete }) {
   const charList = characters.map((character) => (
-    <Character character={character} key={character.id}/>
+    <Character character={character} onDelete={onDelete} key={character.id}/>
   ));
   return <div className="App">{charList}</div>;
 }
