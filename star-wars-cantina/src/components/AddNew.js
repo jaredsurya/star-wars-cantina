@@ -20,8 +20,8 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
           setNewChar({});
         }}
       >
-        <h3>Feeling Creative?</h3>
-        <h4>Add another character:</h4>
+        <h4>Feeling Creative?</h4>
+        <h5>Add another character:</h5>
         <input
           type="text"
           name="name"
@@ -32,7 +32,7 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
         {/* trying to set new value to name key within stateful newCharacter
         variable */}
         <br />
-        <p>Select team affiliation:</p>
+        <p>Select allegiance:</p>
         <div onChange={handleChange}>
           <input
             type="radio"
@@ -94,7 +94,7 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
           onChange={handleChange}
         ></textarea>
         <br />
-        <input type="submit" />
+        <input type="submit" className="submit"/>
       </form>
     </div>
   );
