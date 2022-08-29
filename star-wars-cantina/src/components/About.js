@@ -1,7 +1,7 @@
 import React from "react"
 
 
-function Footer() {
+function About() {
   return(
     <div className="footer">
       <p>This single page app was brought to you by Flatiron School, STARWARS.COM, and Jared Dietz.</p>
@@ -9,4 +9,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default About

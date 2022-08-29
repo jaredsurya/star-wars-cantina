@@ -1,9 +1,12 @@
 import "../App.css";
 import React, { useState, useEffect } from "react";
 import CharacterList from "./CharacterList";
-import Footer from "./Footer";
+import About from "./About";
 import Header from "./Header";
 import AddNew from "./AddNew";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// build out link routing and decorate links. add links to top of other pages. 
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -41,23 +44,25 @@ function App() {
 
   return (
     <div className="App">
-      <Header
-        displayChar={displayChar}
-        setDisplayChar={setDisplayChar}
-        setDisplayForm={setDisplayForm}
-        displayForm={displayForm}
-      />
-      {displayForm ? (
-        <AddNew
-          handleSubmit={handleSubmit}
-          newChar={newChar}
-          setNewChar={setNewChar}
-        />
-      ) : null}
-      {displayChar ? (
-        <CharacterList characters={characters} onDelete={onDelete} />
-      ) : null}
-      <Footer />
+      
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Header
+              displayChar={displayChar}
+              setDisplayChar={setDisplayChar}
+              setDisplayForm={setDisplayForm}
+              displayForm={displayForm}
+            />}/>
+            <Route path="/addnew" element={<AddNew
+              handleSubmit={handleSubmit}
+              newChar={newChar}
+              setNewChar={setNewChar}/>}/>
+            <Route path="/characters" element={<CharacterList 
+              characters={characters} 
+              onDelete={onDelete} />}/>
+            <Route path="/about" element={<About />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
