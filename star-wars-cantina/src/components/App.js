@@ -6,7 +6,7 @@ import Header from "./Header";
 import AddNew from "./AddNew";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// build out link routing and decorate links. add links to top of other pages. 
+// build out link routing and decorate links. add links to top of other pages.
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -19,7 +19,6 @@ function App() {
       .then((res) => res.json())
       .then((data) => setCharacters(data));
   }, []);
-  //console.log(characters)
 
   function handleSubmit(newChar) {
     fetch("http://localhost:9000/characters", {
@@ -30,11 +29,8 @@ function App() {
       body: JSON.stringify(newChar),
     })
       .then((r) => r.json())
-      .then(
-        data => setCharacters([...characters, data])
-      );
+      .then((data) => setCharacters([...characters, data]));
   }
-  // console.log(characters)
   function onDelete(charToDelete) {
     const updatedCharList = characters.filter(
       (character) => character.id !== charToDelete.id
@@ -44,23 +40,26 @@ function App() {
 
   return (
     <div className="App">
-      
       <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Header
-              displayChar={displayChar}
-              setDisplayChar={setDisplayChar}
-              setDisplayForm={setDisplayForm}
-              displayForm={displayForm}
-            />}/>
-            <Route path="/addnew" element={<AddNew
-              handleSubmit={handleSubmit}
-              newChar={newChar}
-              setNewChar={setNewChar}/>}/>
-            <Route path="/characters" element={<CharacterList 
-              characters={characters} 
-              onDelete={onDelete} />}/>
-            <Route path="/about" element={<About />}/>
+          <Route path="/" element={<Header />} />
+          <Route
+            path="/addnew"
+            element={
+              <AddNew
+                handleSubmit={handleSubmit}
+                newChar={newChar}
+                setNewChar={setNewChar}
+              />
+            }
+          />
+          <Route
+            path="/characters"
+            element={
+              <CharacterList characters={characters} onDelete={onDelete} />
+            }
+          />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -18,12 +18,12 @@ function About() {
         <a href="https://flatironschool.com/">Flatiron School</a>,{" "}
         <a href="https://www.starwars.com/databank">STARWARS.COM</a>, and Jared
         Dietz. <br />
-        Jared is a student from upstate New York who made this app during
-        Phase 2 of the Flatiron School cirriculum. He enjoys the outdoors,
-        good movies like Star Wars, and free time with his friends and family.
+        Jared is a student from upstate New York who made this app during Phase
+        2 of the Flatiron School cirriculum. He enjoys the outdoors, good movies
+        like Star Wars, and free time with his friends and family.
         <br />
-        Inspiration for this page came from the Flatiron School cirriculum and the
-         Star Wars movies.
+        Inspiration for this page came from the Flatiron School cirriculum and
+        the Star Wars movies.
         <br />
         This page is made using <a href="https://reactjs.org/">React</a>.
       </p>

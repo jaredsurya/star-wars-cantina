@@ -9,8 +9,7 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
       ...newChar,
       [e.target.name]: e.target.value,
     });
-    //console.log(newChar)
-  }
+   }
 
   return (
     <div className="form">
@@ -23,7 +22,7 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
           alert("NEW CHARACTER SUBMITTED!");
         }}
       >
-        <h4>Feeling Creative?</h4>
+        <h2>Feeling Creative?</h2>
         <h4>Add another character:</h4>
         <input
           type="text"
@@ -32,11 +31,9 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
           className="input-text"
           onChange={handleChange}
         />
-        {/* trying to set new value to name key within stateful newCharacter
-        variable */}
         <br />
         <p>
-          <b>Select their allegiance:</b>
+          <b>Select character allegiance:</b>
         </p>
         <div onChange={handleChange} className="radio">
           <input
@@ -66,7 +63,7 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
         <label for="3">Galactic Empire</label>
         <br />
         <label for="power">
-          <b>Select a power level: </b>
+          <b>Select their power level: </b>
         </label>
 
         <select id="power" name="level" onChange={handleChange}>

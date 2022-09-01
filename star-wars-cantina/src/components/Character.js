@@ -13,7 +13,6 @@ function Character({ character, onDelete }) {
       });
   }
 
-
   return (
     <div className="card">
       <h2>{name}</h2>

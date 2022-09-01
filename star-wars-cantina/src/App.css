@@ -50,7 +50,7 @@ div .card {
 }
 
 .add-character {
-  
+  font-size: larger;
   margin: auto 26%;
   padding: 10px;
   white-space: nowrap;
