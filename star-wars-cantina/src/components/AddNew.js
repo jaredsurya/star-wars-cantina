@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"
 
-
+// event.target.reset()
 
 function AddNew({ handleSubmit, setNewChar, newChar }) {
 
@@ -21,7 +21,8 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
         onSubmit={(e) => {
           e.preventDefault();
           handleSubmit(newChar)
-          setNewChar({});
+          e.target.reset()
+          alert("NEW CHARACTER SUBMITTED!")
         }}
       >
         <h4>Feeling Creative?</h4>
@@ -29,10 +30,10 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
         <input
           type="text"
           name="name"
-          placeholder="Enter character's name"
+          placeholder="Enter character's name:"
           className="input-text"
           onChange={handleChange}
-        />{" "}
+        />
         {/* trying to set new value to name key within stateful newCharacter
         variable */}
         <br />

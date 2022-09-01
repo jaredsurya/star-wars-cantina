@@ -30,9 +30,9 @@ function App() {
       body: JSON.stringify(newChar),
     })
       .then((r) => r.json())
-      .then({
-        /*data => setCharacters(...characters, data) */
-      });
+      .then(
+        data => setCharacters([...characters, data])
+      );
   }
   // console.log(characters)
   function onDelete(charToDelete) {
