@@ -4,13 +4,18 @@ import { Link } from "react-router-dom";
 
 function CharacterList({ characters, onDelete, onSearch }) {
   const [search, setSearch] = useState('')
-  
+  //console.log(search)
+  const filteredChar = characters.filter((character) => {
+    character.name.toLowerCase().includes(search.toLowerCase)
+  })
+  console.log(filteredChar)
   const charList = characters.map((character) => (
     <Character character={character} onDelete={onDelete} key={character.id} />
   ));
   function handleSearch(e) {
     e.preventDefault()
-    return null
+    console.log(search)
+    e.target.reset()
   }
   
   return (
@@ -24,7 +29,7 @@ function CharacterList({ characters, onDelete, onSearch }) {
           name="name"
           placeholder="Search by name:"
           className="input-text"
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) => setSearch(e.target.value.toLowerCase())}
         />
         <input type="submit" className="submit" />
       </form>
