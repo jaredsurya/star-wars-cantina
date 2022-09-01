@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Home() {
   return (
     <div className="header">
       <h1>STAR WARS Cantina!</h1>
@@ -19,4 +19,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Home;

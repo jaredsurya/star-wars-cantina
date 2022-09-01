@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="footer">
+    <div className="about">
       <Link className="links" to="/">
         Home Page
       </Link>
@@ -13,7 +13,7 @@ function About() {
       <Link className="links" to="../addnew">
         Add New Character
       </Link>
-      <p className="char-text about">
+      <p className="char-text">
         This single page app was brought to you by{" "}
         <a href="https://flatironschool.com/">Flatiron School</a>,{" "}
         <a href="https://www.starwars.com/databank">STARWARS.COM</a>, and Jared

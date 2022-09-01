@@ -122,7 +122,7 @@ h3 {
   color: black;
 }
 
-.footer {
+.about {
   color: white;
   background-color: black;
   padding: 30px;
@@ -176,8 +176,8 @@ b {
 }
 
 .char-text {
-  padding:10px;
-  font-size: large;
+  padding:25px;
+  font-size: larger;
 }
 
 h2 {
