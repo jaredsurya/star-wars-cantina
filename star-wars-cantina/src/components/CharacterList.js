@@ -11,8 +11,11 @@ function CharacterList({ characters, onDelete }) {
     <div className="App">
       <Link className="links" to="/">Home Page</Link>
       {charList}
-      <Link className="links" to="/">Home Page</Link>
-      <Link className="links" to="../addnew">Add New Character</Link>
+      <div className="navlink">  
+        <Link className="links" to="/">Home Page</Link>
+        <Link className="links" to="../addnew">Add New Character</Link>
+        <Link className="links" to="../about">About Page</Link>
+      </div>
     </div>);
 }
 

@@ -193,3 +193,10 @@ a:hover {
   color:yellow;
   font-style:normal;
 }
+
+.navlink {
+  background-color: black;
+  margin: auto;
+  width:50%;
+  border-radius: 50%;
+}
