@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Character from "./Character";
 import { Link } from "react-router-dom";
 
-function CharacterList({ characters, onDelete, onSearch }) {
+function CharacterList({ characters, onDelete }) {
   const [search, setSearch] = useState('')
   
   const filteredChar = characters.filter((character) => {
@@ -27,6 +27,13 @@ function CharacterList({ characters, onDelete, onSearch }) {
           className="input-text"
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
         />
+        <label for="sort">
+          <b>Sort by: </b>
+        </label>
+        <select id="sort" name="sort" onChange={handleChange}>
+          <option value="name">NAME</option>
+          <option value="power">POWER LEVEL</option>
+        </select>
       </form>
       {charList}
       <div className="navlink">

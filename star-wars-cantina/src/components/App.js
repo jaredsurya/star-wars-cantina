@@ -9,8 +9,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [characters, setCharacters] = useState([]);
   const [newChar, setNewChar] = useState({});
-  const [displayChar, setDisplayChar] = useState(false);
-  const [displayForm, setDisplayForm] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:9000/characters")
