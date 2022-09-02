@@ -13,6 +13,14 @@ function CharacterList({ characters, onDelete }) {
   const charList = filteredChar.map((character) => (
     <Character character={character} onDelete={onDelete} key={character.id} />
   ));
+
+  function handleSort (e) {
+    if (e.target.value === 'name'){
+      console.log("NAME!!!")
+    } else {
+      console.log("POWER!!!")
+    }
+  }
   
   return (
     <div className="App">
@@ -30,7 +38,7 @@ function CharacterList({ characters, onDelete }) {
         <label for="sort">
           <b>Sort by: </b>
         </label>
-        <select id="sort" name="sort" onChange={handleChange}>
+        <select id="sort" name="sort" onChange={handleSort}>
           <option value="name">NAME</option>
           <option value="power">POWER LEVEL</option>
         </select>

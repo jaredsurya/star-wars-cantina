@@ -61,10 +61,21 @@ input[type="text"] {
   border-radius: 4px;
 }
 
+.input-text::placeholder {
+  font-weight: bold;
+}
+
+select {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
 textarea {
   border: 2px solid red;
   border-radius: 4px;
   margin: 5px;
+  width: 50%;
+  height: 80px;
 }
 
 .header {
