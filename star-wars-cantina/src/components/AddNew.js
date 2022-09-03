@@ -96,7 +96,7 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
         <br />
         <input type="submit" className="submit" />
       </form>
-      <div className="navlink">
+      <div className="nav">
         <Link className="links" to="/">
           Home Page
         </Link>

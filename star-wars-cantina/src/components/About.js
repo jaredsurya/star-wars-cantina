@@ -4,15 +4,17 @@ import { Link } from "react-router-dom";
 function About() {
   return (
     <div className="about">
-      <Link className="links" to="/">
-        Home Page
-      </Link>
-      <Link className="links" to="../characters">
-        Character Page
-      </Link>
-      <Link className="links" to="../addnew">
-        Add New Character
-      </Link>
+      <div>
+        <Link className="links" to="/">
+          Home Page
+        </Link>
+        <Link className="links" to="../characters">
+          Character Page
+        </Link>
+        <Link className="links" to="../addnew">
+          Add New Character
+        </Link>
+      </div>
       <p className="char-text">
         This single page app was brought to you by{" "}
         <a href="https://flatironschool.com/">Flatiron School</a>,{" "}
