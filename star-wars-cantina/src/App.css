@@ -117,8 +117,8 @@ h3 {
   border: 4px solid rgb(255, 166, 0);
   border-radius: 50%;
   background-color: yellow;
-  margin: 1px;
-  margin-top: 20px;
+  margin: 1px auto;
+  margin-top: 30px;
   padding: 6px;
   font-size: 1.2em;
   font-weight: bold;
@@ -192,7 +192,15 @@ b {
 }
 
 h2 {
-  font-size: xx-large;
+  font-size: 2em;
+  background-color: gray;
+  border-radius: 50%;
+  width: 55%;
+  margin:auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: 4px black solid;
+  color: white;
 }
 
 a {
@@ -210,4 +218,9 @@ a:hover {
   margin: auto;
   width: 50%;
   border-radius: 50%;
+}
+
+form {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }

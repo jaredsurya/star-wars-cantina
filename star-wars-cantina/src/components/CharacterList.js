@@ -27,6 +27,12 @@ function CharacterList({ characters, onDelete }) {
       <Link className="links" to="/">
         Home Page
       </Link>
+      <Link className="links" to="../addnew">
+        Add New Character
+      </Link>
+      <Link className="links" to="../about">
+        About Page
+      </Link>
       <form>
         <input
           type="text"
