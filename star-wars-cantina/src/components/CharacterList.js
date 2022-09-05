@@ -1,30 +1,30 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Character from "./Character";
 import { Link } from "react-router-dom";
 
 function CharacterList({ characters, onDelete }) {
-  const [search, setSearch] = useState('')
-  
+  const [search, setSearch] = useState("");
+
   const filteredChar = characters.filter((character) => {
-    let lowercase = character.name.toLowerCase()
-    return lowercase.includes(search)
-  })
-  
+    let lowercase = character.name.toLowerCase();
+    return lowercase.includes(search);
+  });
+
   const charList = filteredChar.map((character) => (
     <Character character={character} onDelete={onDelete} key={character.id} />
   ));
 
-  function handleSort (e) {
-    if (e.target.value === 'name'){
-      console.log("NAME!!!")
+  function handleSort(e) {
+    if (e.target.value === "name") {
+      console.log("NAME!!!");
     } else {
-      console.log("POWER!!!")
+      console.log("POWER!!!");
     }
   }
-  
+
   return (
     <div className="App">
-      <div className="nav"> 
+      <div className="nav">
         <Link className="links" to="/">
           Home Page
         </Link>
@@ -34,7 +34,7 @@ function CharacterList({ characters, onDelete }) {
         <Link className="links" to="../about">
           About Page
         </Link>
-      </div>  
+      </div>
       <form>
         <input
           type="text"
@@ -52,7 +52,7 @@ function CharacterList({ characters, onDelete }) {
         </select>
       </form>
       {charList}
-      <div className="nav" >
+      <div className="nav">
         <Link className="links" to="/">
           Home Page
         </Link>
@@ -62,7 +62,7 @@ function CharacterList({ characters, onDelete }) {
         <Link className="links" to="../about">
           About Page
         </Link>
-      </div>  
+      </div>
     </div>
   );
 }

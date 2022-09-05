@@ -17,11 +17,11 @@ function Character({ character, onDelete }) {
     <div className="card">
       <h2>{name}</h2>
       <img src={img} alt={name} className="picture" />
-      <p className="char-text">Affiliation: {affiliation}</p>
-      <p className="char-text">Power Level: {level}</p>
+      <p className="char-text"><u>Affiliation</u>: {affiliation}</p>
+      <p className="char-text"><u>Power Level</u>: {level}</p>
       <p className="char-text">{description}</p>
       <button className="del-btn" onClick={handleDeleteClick}>
-        REMOVE THIS CHARACTER
+          REMOVE THIS CHARACTER
       </button>
     </div>
   );
