@@ -9,7 +9,7 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
       ...newChar,
       [e.target.name]: e.target.value,
     });
-   }
+  }
 
   return (
     <div className="form">
@@ -36,6 +36,7 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
           <b>Select character allegiance:</b>
         </p>
         <div onChange={handleChange} className="radio">
+          <label for="1">Rebel Alliance:</label>
           <input
             type="radio"
             name="affiliation"
@@ -43,7 +44,7 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
             className="input-text"
             value="Rebel Alliance"
           />
-          <label for="1">Rebel Alliance</label>
+          <label for="2">Neutral:</label>
           <input
             type="radio"
             name="affiliation"
@@ -51,7 +52,7 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
             className="input-text"
             value="Neutral"
           />
-          <label for="2">Neutral</label>{" "}
+          <label for="3">Galactic Empire:</label>
           <input
             type="radio"
             name="affiliation"
@@ -60,7 +61,6 @@ function AddNew({ handleSubmit, setNewChar, newChar }) {
             value="Galactic Empire"
           />
         </div>
-        <label for="3">Galactic Empire</label>
         <br />
         <label for="power">
           <b>Select their power level: </b>

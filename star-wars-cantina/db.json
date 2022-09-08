@@ -25,14 +25,6 @@
       "img": "https://lumiere-a.akamaihd.net/v1/images/darth-vader-main_4560aff7.jpeg?region=0%2C67%2C1280%2C720&width=768"
     },
     {
-      "id": 4,
-      "name": "R2-D2",
-      "level": 3,
-      "affiliation": "Rebel Alliance",
-      "description": "A reliable and versatile astromech droid, R2-D2 has served Padmé Amidala, Anakin Skywalker, and Luke Skywalker in turn, showing great bravery in rescuing his masters and their friends from many perils. A skilled starship mechanic and fighter pilot's assistant, he has an unlikely but enduring friendship with the fussy protocol droid C-3PO.",
-      "img": "https://lumiere-a.akamaihd.net/v1/images/r2-d2-main_f315b094.jpeg?region=273%2C0%2C951%2C536&width=768"
-    },
-    {
       "id": 5,
       "name": "Princess Leia",
       "level": 7,
@@ -47,22 +39,6 @@
       "affiliation": "Galactic Empire",
       "description": "Stormtroopers are elite shock troops fanatically loyal to the Empire and impossible to sway from the Imperial cause. They wear imposing white armor, which offers a wide range of survival equipment and temperature controls to allow the soldiers to survive in almost any environment. Stormtroopers wield blaster rifles and pistols with great skill, and attack in hordes to overwhelm their enemies. Along with standard stormtroopers, the Empire has organized several specialized units, including snowtroopers and scout troopers.",
       "img": "https://lumiere-a.akamaihd.net/v1/images/stormtrooper-main_011e064e.jpeg?region=0%2C85%2C1619%2C911&width=768"
-    },
-    {
-      "id": 7,
-      "name": "Jawa",
-      "level": 3,
-      "affiliation": "neutral",
-      "description": "Jawas are meter-tall humanoids completely hidden behind rough, hand-woven robes. Their faces are concealed within the dark folds of a cowl, from which peer their sickly glowing yellow eyes. They comb the deserts of Tatooine in search of discarded scrap and wayward mechanicals. Using their cobbled-together weaponry, they can incapacitate droids and drag them to their treaded fortress-homes, immense sand-scarred vehicles known as sandcrawlers. They sell their hastily refurbished junk to moisture farmers who are hard-pressed to find a better selection elsewhere.",
-      "img": "https://lumiere-a.akamaihd.net/v1/images/jawas-main_a668013b.jpeg?region=0%2C0%2C1280%2C721&width=768"
-    },
-    {
-      "id": 8,
-      "name": "C-3PO",
-      "level": 3,
-      "affiliation": "Rebel Alliance",
-      "description": "C-3PO longs for more peaceful times, but his continued service to the Resistance — and his knowledge of more than seven million forms of communication — keeps the worry-prone droid in the frontlines of galactic conflict. Programmed for etiquette and protocol, Threepio was built by a young Anakin Skywalker, and has been a constant companion to astromech R2-D2. Over the years, he was involved in some of the galaxy’s most defining moments and thrilling battles. Since the Empire’s defeat, C-3PO has served Leia Organa, head of a Resistance spy ring aimed at undermining the First Order.",
-      "img": "https://lumiere-a.akamaihd.net/v1/images/c-3po-main_417a2902.jpeg?region=176%2C0%2C951%2C536&width=768"
     },
     {
       "id": 9,
@@ -87,6 +63,22 @@
       "level": "7",
       "affiliation": "Rebel Alliance",
       "id": 11
+    },
+    {
+      "name": "R2D2",
+      "affiliation": "Rebel Alliance",
+      "level": "4",
+      "description": "R2!",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/r2-d2-main_f315b094.jpeg?region=273%2C0%2C951%2C536&width=768",
+      "id": 12
+    },
+    {
+      "name": "Jabba the Hutt",
+      "affiliation": "Rebel Alliance",
+      "level": "5",
+      "description": "Jabba the Hutt was one of the galaxy’s most powerful gangsters, with far-reaching influence in both politics and the criminal underworld. There were no second chances with Jabba, something Han Solo would find out -- though the slug-like alien would ultimately fall victim to his own hubris and vengeful ways.",
+      "img": "https://lumiere-a.akamaihd.net/v1/images/Jabba-The-Hutt_b5a08a70.jpeg?region=0%2C0%2C1200%2C675&width=768",
+      "id": 13
     }
   ]
 }

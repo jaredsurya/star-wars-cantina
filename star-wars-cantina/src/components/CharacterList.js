@@ -4,23 +4,27 @@ import { Link } from "react-router-dom";
 
 function CharacterList({ characters, onDelete }) {
   const [search, setSearch] = useState("");
+  const [orderBy, setOrderBy] = useState("name");
 
   const filteredChar = characters.filter((character) => {
     let lowercase = character.name.toLowerCase();
     return lowercase.includes(search);
   });
 
+  function handleSort(e) {
+    setOrderBy(e.target.value);
+  }
+  
+  if (orderBy == "name") {
+    filteredChar.sort((a, b) => a.name.localeCompare(b.name));
+  }
+  if (orderBy == "power") {
+    filteredChar.sort((a, b) => b.level - a.level);
+  }
+
   const charList = filteredChar.map((character) => (
     <Character character={character} onDelete={onDelete} key={character.id} />
   ));
-
-  function handleSort(e) {
-    if (e.target.value === "name") {
-      console.log("NAME!!!");
-    } else {
-      console.log("POWER!!!");
-    }
-  }
 
   return (
     <div className="App">
