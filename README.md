@@ -1,4 +1,4 @@
-# STAR-WARS-react
+# STAR WARS Cantina
 
 ### Inspiration
 The motivating force for this project was my love for Star Wars. It is my belief that any Star Wars fan will appreciate this easy to use application. 
