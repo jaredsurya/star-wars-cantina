@@ -13,6 +13,13 @@ This is a RESTful single page application that uses JSON-server to GET and POST 
   - Characters may be sorted by name or by their power levels. 
   - New characters may be added with all of their details. 
 
+### Installation
+  - Clone this repository into your home environment.
+  - Open the repo in your text editor (i.e. VS Code).
+  - CD inside of the star-wars-cantina folder.
+  - Run `npm install`.
+  - Run `json-server --port 7000 db.json`
+  - Run `npm start`
  
 ### Visual Guide
 On the front page the user has the option to View Characters, Add New Characters, or view the About Page. 
